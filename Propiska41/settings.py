@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import psycopg2
+import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -80,16 +81,18 @@ WSGI_APPLICATION = 'Propiska41.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'propiska41',
-        'USER': 'proadmin',
-        'PASSWORD': 'Doofus686', #might be empty string ''
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'propiska41',
+#         'USER': 'proadmin',
+#         'PASSWORD': 'Doofus686', #might be empty string ''
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 DATABASE_URL = os.environ['DATABASE_URL']
 
