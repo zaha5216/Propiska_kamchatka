@@ -1,2 +1,74 @@
 
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+        content="text/html"; charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}Главная{% endblock %}OOO "Луч"</title>
+        {% bootstrap_css %}
+        <link rel="stylesheet" type="text/css"
+        href="{% static 'main2/style.css' %}">
+        {% bootstrap_javascript jquery='slim' %}
+        {% block searchform %}
+        {% endblock %}
+    </head>
 
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <a class="navbar-brand" href="{% url 'main:index' %}">Наши услуги</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-4 mt-md-0">
+
+          <li class="nav-item active">
+            <a class="nav-link" style=" margin-right: 450px" href="{% url 'main:other' page='about' %}">Контакты</a>
+          </li>
+          <li>
+          </li>
+          <li >
+              <b><a class="nav-link" style="color:red"  href="tel:+79140259955"> Свяжитесь с нами по телефону: 8-914-025-99-55</a></b>
+          </li>
+        </ul>
+      </div>
+</nav>
+<div class="container" >
+    <div class="container">
+
+  <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-6">
+            <div class="list-group">
+                <div class="shadow-lg p-3 mb-5 bg-white rounded" style=" margin:10px 55px 15px 20px;">
+                    <img  src="/static/main2/ОООLUCH.jpg" width=100%>
+                          <h4 class="text-center"> Для подробной информации и консультации по вашему делу свяжитесь с нами по телефону:</h4>
+                          <h3 class="text-center"><a style="color:red"  href="tel:+79140259955"> 8-914-025-99-55</a></h3>
+                      <h3 class="text-center">Работаем ежедневно без выходных 24/7</h3>
+                      <h5 class="text-center">Наш офис находится по адресу:<br> улица Пограничная дом 17, 2 этаж офис 222. <br>Время работы офиса:<br> Понедельник-пятница: с 9 до 17<br> Cуббота: с 10 до 14<br>Воскресенье: выходной  </h5>
+                </div>
+            </div>
+        </div>
+          <div class="col-8 col-md-4">
+               <h2 class="rounded text-center"style="margin:10px 10px 15px 15px;"  >
+                      Схема проезда:
+               </h2>
+              <div class="col">
+                <img  src="/static/main2/card.jpg" width=170%>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+</div>
+<footer class="mt-3" style="background: white">
+    <h4 class="text-center font-italic" style="margin-bottom:-16px">&copy; OOO "Луч" гарантия оформления прописки и регистраии и других документов</h4>
+</footer>
+
+</body>
+</html>
