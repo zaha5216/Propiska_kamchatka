@@ -28,7 +28,7 @@ SECRET_KEY = '2d0a9oxl6$$s09-4a^r@5&c(xmx*%&fmfq3$2248lu^r-z@eer'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -81,7 +81,17 @@ WSGI_APPLICATION = 'Propiska41.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-#
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'propiska41',
+        'USER': 'proadmin',
+        'PASSWORD': 'Doofus686', #might be empty string ''
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
 # DATABASE_URL = os.environ['DATABASE_URL']
 #
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
