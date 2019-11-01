@@ -1,4 +1,4 @@
-web: bundle exec Propiska_kamchatka server -p $PORT
-web: lein run -m demo.web $PORT
+web: gunicorn Propiska41.wsgi
+
 
 
