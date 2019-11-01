@@ -28,7 +28,7 @@ SECRET_KEY = '2d0a9oxl6$$s09-4a^r@5&c(xmx*%&fmfq3$2248lu^r-z@eer'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -91,7 +91,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
 # DATABASE_URL = os.environ['DATABASE_URL']
 #
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
