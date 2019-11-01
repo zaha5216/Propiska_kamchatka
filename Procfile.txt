@@ -1,5 +1,4 @@
 web: gunicorn Propiska41.wsgi --log-file -
-web: bundle exec Propiska41 server -p $PORT
 
 
 
