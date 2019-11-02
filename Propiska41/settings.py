@@ -88,8 +88,8 @@ DATABASES = {
         'NAME': 'propiska41',
         'USER': 'proadmin',
         'PASSWORD': 'Doofus686', #might be empty string ''
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '127.0.0.1, 8000',
+        'PORT': '5432',
     }
 }
 #
