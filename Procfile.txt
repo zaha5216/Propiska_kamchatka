@@ -1,6 +1,4 @@
-web: gunicorn Propiska41.wsgi --log-file -
-heroku ps:scale web=1
-
+web: gunicorn Propiska41.wsgi
 
 
 
