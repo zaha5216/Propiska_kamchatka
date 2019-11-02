@@ -82,28 +82,28 @@ WSGI_APPLICATION = 'Propiska41.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'propiska41',
-        'USER': 'proadmin',
-        'PASSWORD': 'Doofus686', #might be empty string ''
-        'HOST': '127.0.0.1, 8000',
-        'PORT': '5432',
-    }
-}
-#
-#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'd72hbh87v5gnif',
-#         'USER': 'yumjcepxeefrrn',
-#         'PASSWORD': '194f48dc0ae6011b39685071d757c2149410590f20951b98695b95f11c5c49b0', #might be empty string ''
-#         'HOST': 'localhost',
+#         'NAME': 'propiska41',
+#         'USER': 'proadmin',
+#         'PASSWORD': 'Doofus686', #might be empty string ''
+#         'HOST': '127.0.0.1, 8000',
 #         'PORT': '5432',
 #     }
 # }
+#
+#
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd72hbh87v5gnif',
+        'USER': 'yumjcepxeefrrn',
+        'PASSWORD': '194f48dc0ae6011b39685071d757c2149410590f20951b98695b95f11c5c49b0', #might be empty string ''
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 # # DATABASE_URL = os.environ['DATABASE_URL']
 #
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
