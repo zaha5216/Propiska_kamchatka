@@ -1,5 +1,6 @@
 venv
 *.pyc
-*.pot
-*.log
 staticfiles
+.env
+db.postgresql
+Propiska41/*
