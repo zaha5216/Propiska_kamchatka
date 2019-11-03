@@ -12,15 +12,14 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import psycopg2
-import django_heroku
-
+# import djangoheroku
 import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -107,7 +106,7 @@ DATABASES = {
 #         'PORT': '5432',
 #     }
 # }
-DATABASE_URL = os.environ['DATABASE_URL']
+# DATABASE_URL = os.environ['DATABASE_URL']
 #
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
