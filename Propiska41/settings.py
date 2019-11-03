@@ -30,7 +30,10 @@ SECRET_KEY = '2d0a9oxl6$$s09-4a^r@5&c(xmx*%&fmfq3$2248lu^r-z@eer'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['damp-savannah-98220.herokuapp.com']
+
+ALLOWED_HOSTS = []
+
+# ALLOWED_HOSTS = ['damp-savannah-98220.herokuapp.com']
 
 
 # Application definition
