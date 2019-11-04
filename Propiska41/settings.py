@@ -97,13 +97,13 @@ WSGI_APPLICATION = 'Propiska41.wsgi.application'
 #         'PORT': '5432',
 #     }
 # }
-#
+
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd72hbh87v5gnif',
-        'USER': 'yumjcepxeefrrn',
+        'USE./R': 'yumjcepxeefrrn',
         'PASSWORD': '194f48dc0ae6011b39685071d757c2149410590f20951b98695b95f11c5c49b0', #might be empty string ''
         'HOST': 'localhost',
         'PORT': '5432',
