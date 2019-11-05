@@ -105,7 +105,7 @@ DATABASES = {
         'NAME': 'd72hbh87v5gnif',
         'USE./R': 'yumjcepxeefrrn',
         'PASSWORD': '194f48dc0ae6011b39685071d757c2149410590f20951b98695b95f11c5c49b0', #might be empty string ''
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
