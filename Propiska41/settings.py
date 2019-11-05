@@ -33,7 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = ['damp-savannah-98220.herokuapp.com']
+ALLOWED_HOSTS = ['damp-savannah-98220.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -105,7 +105,7 @@ DATABASES = {
         'NAME': 'd72hbh87v5gnif',
         'USE./R': 'yumjcepxeefrrn',
         'PASSWORD': '194f48dc0ae6011b39685071d757c2149410590f20951b98695b95f11c5c49b0', #might be empty string ''
-        'HOST': 'ec2-174-129-252-226.compute-1.amazonaws.com',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
