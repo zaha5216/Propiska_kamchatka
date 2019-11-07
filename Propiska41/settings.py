@@ -33,7 +33,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 
-ALLOWED_HOSTS = [ 'registracia41.ru', 'damp-savannah-98220.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = [ 'registracia41.ru', 'www.registracia41.ru','damp-savannah-98220.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
