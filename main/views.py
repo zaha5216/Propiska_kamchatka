@@ -14,4 +14,13 @@ def other_page(request, page):
     except TemplateDoesNotExist:
         raise Http404
     return HttpResponse(template.render(request=request))
+
+
+def gost_page(request, page):
+    try:
+        template = get_template('main/' + page + '.html')
+    except TemplateDoesNotExist:
+        raise Http404
+    return HttpResponse(template.render(request=request))
+# Create your views here.
 # Create your views here.

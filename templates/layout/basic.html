@@ -41,13 +41,11 @@
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-4 mt-md-0">
-          <li style="margin-top:12px" >
-              <a class="navbar-brand" href="{% url 'main:index' %}">Наши услиги</a>
-          </li>
-          <li class="nav-item active" style="margin-top:12px">
-            <a class="nav-link" style=" margin-right: 600px" href="{% url 'main:other' page='about' %}">Контакты</a>
-          </li>
           <li>
+              <a class="navbar-brand" style="margin-top:12px;  "href="{% url 'main:gost' page='gost' %}">Собственикам жилья</a>
+          </li>
+          <li class="nav-item active" style="margin-top:12px; margin-right:400px; ">
+            <a class="nav-link" style=" margin-right" href="{% url 'main:other' page='about' %}">Контакты</a>
           </li>
           <li >
               <b><a class="nav-link" style="color:red"  href="tel:+79140259955"> Свяжитесь с нами<br> по телефону: 8-914-025-99-55</a></b>
