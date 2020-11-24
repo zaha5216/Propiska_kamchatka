@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'Propiska41.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-
+#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -109,9 +109,9 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-# DATABASE_URL = os.environ['DATABASE_URL']
-#
-# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 # DATABASES = {
 #     'default': {
